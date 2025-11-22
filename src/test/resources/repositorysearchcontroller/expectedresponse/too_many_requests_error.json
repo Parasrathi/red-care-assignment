@@ -1,0 +1,4 @@
+{
+  "httpStatus": 429,
+  "errorMessage": "Too Many Requests to GitHub API"
+}

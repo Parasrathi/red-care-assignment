@@ -1,0 +1,4 @@
+{
+  "httpStatus": 400,
+  "errorMessage": "Bad request to GitHub API"
+}

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: red-care-task
+
+github:
+  api:
+    base-url: https://api.github.com
+    token: ${GITHUB_TOKEN:}
+
+feign:
+  client:
+    config:
+      githubClient:
+        connectTimeout: 5000
+        readTimeout: 10000
+        loggerLevel: BASIC

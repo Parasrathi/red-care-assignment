@@ -1,0 +1,13 @@
+{
+  "repositories": [
+    {
+      "id": "123",
+      "name": "demo-repo",
+      "stargazers_count": 10,
+      "language": "Java",
+      "forks_count": 100,
+      "updated_at": "2025-11-20T23:00:00.000+00:00",
+      "popularityScore": 0.4439
+    }
+  ]
+}
