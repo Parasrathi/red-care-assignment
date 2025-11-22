@@ -26,7 +26,6 @@ public class RepositorySearchService {
     private static final int PER_PAGE_COUNT = 100;
     private static final int PAGE_NUMBER = 1;
     private static final int MAX_PAGES_LIMIT = 10;
-    private static final int ZERO = 0;
     private static final int MAX_THREADS = 10;
 
     public RepositorySearchService(final GithubApiClient githubApiClient,
@@ -96,10 +95,8 @@ public class RepositorySearchService {
     }
 
     private int getTotalPages(int totalCount) {
-        if (totalCount % PER_PAGE_COUNT == ZERO) {
-            return totalCount / PER_PAGE_COUNT;
-        } else {
-            return (totalCount / PER_PAGE_COUNT) + 1;
-        }
+        return totalCount % PER_PAGE_COUNT == 0
+                ? totalCount / PER_PAGE_COUNT
+                : (totalCount / PER_PAGE_COUNT) + 1;
     }
 }
